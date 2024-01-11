@@ -2,7 +2,7 @@
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/PhaserEditor2D/flappy-chicken-scripts-demo)
 
-A demo project to show how to use the script nodes from the script libraries. 
+A demo project to show how to use the script nodes from the script libraries. It requires Phaser Editor 2D v3.66.0 or a newer version.
 
 [→ Play a live version of this project](https://phasereditor2d.github.io/flappy-chicken-scripts-demo/)
 
