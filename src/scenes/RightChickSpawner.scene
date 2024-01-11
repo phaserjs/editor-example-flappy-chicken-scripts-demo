@@ -1,0 +1,75 @@
+{
+    "id": "1a525109-94c9-4318-9a7d-3e6a2f303435",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "prefabObjDisplayFmt": "Right chick spawner",
+        "displayName": "Right Chick Spawner",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 360,
+        "borderHeight": 240
+    },
+    "displayList": [
+        {
+            "prefabId": "6af410ae-0fed-4226-b831-df8c85a3b493",
+            "id": "0b55a078-3f74-4216-adc2-55c9c142d15f",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner",
+            "x": 140,
+            "y": 130,
+            "nestedPrefabs": [
+                {
+                    "prefabId": "0e612f2b-566f-4172-8781-a90e74bdda1d",
+                    "id": "b44adc88-ae74-4890-96c7-b425329e9d7e",
+                    "label": "onAwakeScript_1",
+                    "nestedPrefabs": [
+                        {
+                            "prefabId": "75fa587b-bcd0-4530-a1c9-9faeaba821bf",
+                            "id": "682c18b5-58bf-40e2-8423-f921dc23398d",
+                            "label": "emitRandomTickActionScript",
+                            "nestedPrefabs": [
+                                {
+                                    "prefabId": "15bb1c47-31a0-430f-b70c-8bb3380a8a9b",
+                                    "id": "d5579030-5684-492a-acaa-23bae07b583f",
+                                    "label": "delayRandomActionScript",
+                                    "nestedPrefabs": [
+                                        {
+                                            "prefabId": "99614448-edbd-42d8-ab0a-f90a2f6fd014",
+                                            "id": "a98d0f3d-14ce-436f-bb03-125096705c69",
+                                            "label": "spawnAction",
+                                            "nestedPrefabs": [
+                                                {
+                                                    "prefabId": "4c147dc3-925e-4f94-9b9d-a2ca2ac334cb",
+                                                    "id": "9881d60d-1c5d-4b34-a18c-d3581879c4c1",
+                                                    "unlock": [
+                                                        "velocityX"
+                                                    ],
+                                                    "label": "setVelocityXActionScript",
+                                                    "velocityX": -80
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

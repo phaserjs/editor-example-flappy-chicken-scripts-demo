@@ -1,0 +1,744 @@
+{
+    "id": "4c95461c-693d-4231-a91e-2a7fd2392d64",
+    "sceneType": "SCENE",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Level2",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 360,
+        "borderHeight": 240
+    },
+    "displayList": [
+        {
+            "type": "TileSprite",
+            "id": "dca79719-d08c-4909-8b59-44be41bef41c",
+            "label": "bg_png",
+            "texture": {
+                "key": "atlas",
+                "frame": "bg.png"
+            },
+            "originX": 0,
+            "originY": 0,
+            "width": 384,
+            "height": 240
+        },
+        {
+            "type": "Container",
+            "id": "19a31895-2890-452d-92af-d6d2c94e75b1",
+            "label": "destroyBars",
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "49f53d6c-9780-41e4-a390-76e2a3ef2110",
+                    "label": "destroyBar2",
+                    "x": -139,
+                    "y": -31,
+                    "originX": 0,
+                    "originY": 0,
+                    "ArcadeComponent.active": true,
+                    "moves": false,
+                    "body.width": 38,
+                    "body.height": 285,
+                    "isFilled": true,
+                    "width": 38,
+                    "height": 285
+                },
+                {
+                    "type": "Rectangle",
+                    "id": "d2e1439e-6152-44bd-85f2-ab519a5223e2",
+                    "label": "destroyBar1",
+                    "x": 496,
+                    "y": -31,
+                    "originX": 0,
+                    "originY": 0,
+                    "ArcadeComponent.active": true,
+                    "moves": false,
+                    "body.width": 38,
+                    "body.height": 285,
+                    "isFilled": true,
+                    "width": 38,
+                    "height": 285
+                },
+                {
+                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
+                    "id": "bea49373-2f08-41cd-a49c-724df062b815",
+                    "label": "onAwakeScript_2",
+                    "list": [
+                        {
+                            "prefabId": "8dafe04b-63d4-4441-a042-c7883fdc3883",
+                            "id": "e82649ec-2a40-411f-9333-119225f4f25a",
+                            "unlock": [
+                                "collideWith"
+                            ],
+                            "label": "makeObjectColliderActionScript_3",
+                            "collideWith": "chicks",
+                            "list": [
+                                {
+                                    "prefabId": "466f923c-91c6-4605-a1f2-01fc6dfb9ad2",
+                                    "id": "c1050a04-34f9-400f-9d75-97544eca0360",
+                                    "label": "destroyActionScript_4",
+                                    "components": [
+                                        "ActionTargetComp"
+                                    ],
+                                    "ActionTargetComp.target": "ARG_2",
+                                    "ActionTargetComp.targetName": "chick"
+                                },
+                                {
+                                    "prefabId": "4154ab69-5f6f-4def-91df-d67d04132ac8",
+                                    "id": "606f89c6-2a41-4619-8adf-38a0fa2e9de9",
+                                    "unlock": [
+                                        "message"
+                                    ],
+                                    "label": "consoleLogActionScript",
+                                    "message": "destroy chick"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "id": "0540968d-79e3-4eb4-a347-d61f9f732094",
+            "label": "bombs",
+            "scope": "METHOD"
+        },
+        {
+            "type": "Container",
+            "id": "fdcadb36-e65b-436f-a95a-519f57f86f5e",
+            "label": "eggs",
+            "scope": "METHOD"
+        },
+        {
+            "type": "Container",
+            "id": "f24d56a7-cd30-456d-9ab8-35ce5cbec68e",
+            "label": "chicks",
+            "scope": "METHOD"
+        },
+        {
+            "prefabId": "1a525109-94c9-4318-9a7d-3e6a2f303435",
+            "id": "529f2caf-4d58-4363-852c-97d94193a92b",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner",
+            "x": 445,
+            "y": 192
+        },
+        {
+            "prefabId": "88e31432-0c7c-4e90-b45e-0938c3e876a9",
+            "id": "69a2de2d-4db4-42d9-998f-89967df79ef3",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner_1",
+            "x": -59,
+            "y": 192
+        },
+        {
+            "prefabId": "88e31432-0c7c-4e90-b45e-0938c3e876a9",
+            "id": "fde68ab7-be1a-401d-83c9-00eb9add28b3",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner_2",
+            "x": -59,
+            "y": 48
+        },
+        {
+            "prefabId": "1a525109-94c9-4318-9a7d-3e6a2f303435",
+            "id": "97cc6229-e5ab-406e-a24c-e18caa40e2eb",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner_3",
+            "x": 445,
+            "y": 48
+        },
+        {
+            "prefabId": "88e31432-0c7c-4e90-b45e-0938c3e876a9",
+            "id": "91562f9f-005a-4cd9-a286-cb3386edcfbc",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner_4",
+            "x": -59,
+            "y": 96
+        },
+        {
+            "prefabId": "1a525109-94c9-4318-9a7d-3e6a2f303435",
+            "id": "2690b080-0061-4a55-a9ea-d1f1ecf4336d",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner_5",
+            "x": 445,
+            "y": 96
+        },
+        {
+            "prefabId": "1a525109-94c9-4318-9a7d-3e6a2f303435",
+            "id": "dfb5df3b-f6d7-48a4-bae2-3f9d442e6df5",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner_6",
+            "x": 445,
+            "y": 144
+        },
+        {
+            "prefabId": "88e31432-0c7c-4e90-b45e-0938c3e876a9",
+            "id": "b17db0a0-4fc4-4e16-9f76-7f2511d288ee",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "chickSpawner_7",
+            "x": -59,
+            "y": 144
+        },
+        {
+            "prefabId": "f325a9bf-50fe-4cd0-8e81-79f8ad95f63e",
+            "id": "86395b60-ef0e-4aa8-9bc8-b2cd1520bcc7",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "bombSpawner",
+            "x": 113,
+            "y": -24
+        },
+        {
+            "type": "Image",
+            "id": "89c71b25-e074-4378-833e-0da44731ef1b",
+            "label": "chickenSpawner",
+            "texture": {
+                "key": "atlas",
+                "frame": "chicken1.png"
+            },
+            "x": 180,
+            "y": -25,
+            "list": [
+                {
+                    "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+                    "id": "ac04f455-b3fd-4cb4-b304-2f454393d6d6",
+                    "unlock": [
+                        "eventName",
+                        "eventEmitter"
+                    ],
+                    "label": "onEventScript_1",
+                    "eventName": "spawn-chicken",
+                    "eventEmitter": "scene.events",
+                    "list": [
+                        {
+                            "prefabId": "e5d7fee6-6545-4858-b01c-a84723010d37",
+                            "id": "7440e65b-3119-45c7-8ecc-d066d4827054",
+                            "unlock": [
+                                "objectPrefab",
+                                "spawnFrom"
+                            ],
+                            "label": "spawnActionScript",
+                            "displayName": "Spawn player",
+                            "objectPrefab": "Chicken",
+                            "list": [
+                                {
+                                    "prefabId": "8dafe04b-63d4-4441-a042-c7883fdc3883",
+                                    "id": "37ececa9-3042-46e4-9917-0491fd5e40c3",
+                                    "unlock": [
+                                        "collideWith",
+                                        "overlapOnly"
+                                    ],
+                                    "label": "makeObjectColliderActionScript",
+                                    "collideWith": "chicks",
+                                    "overlapOnly": true,
+                                    "components": [
+                                        "ActionTargetComp"
+                                    ],
+                                    "ActionTargetComp.target": "ARG_1",
+                                    "ActionTargetComp.targetName": "player",
+                                    "list": [
+                                        {
+                                            "prefabId": "4c12d8f0-15ea-42f4-bf21-fa80585f6a64",
+                                            "id": "0fd68999-fffa-4148-a854-03dccf4dd6e4",
+                                            "unlock": [
+                                                "down"
+                                            ],
+                                            "label": "bodyTouchingFilterScript",
+                                            "down": true,
+                                            "components": [
+                                                "ActionTargetComp"
+                                            ],
+                                            "ActionTargetComp.target": "ARG_1",
+                                            "ActionTargetComp.targetName": "player",
+                                            "nestedPrefabs": [
+                                                {
+                                                    "prefabId": "ca6a42fa-82db-4d2f-9d6d-6eff47ca5bc8",
+                                                    "id": "540c8612-2270-4fb7-b536-dcace4a2b7fe",
+                                                    "label": "elseActions",
+                                                    "list": [
+                                                        {
+                                                            "prefabId": "757fdd95-b5cc-4c5b-adef-a26b5965d851",
+                                                            "id": "356ce770-2cd5-4623-bd73-ea34b8c502b9",
+                                                            "unlock": [
+                                                                "eventEmitter",
+                                                                "eventName"
+                                                            ],
+                                                            "label": "emitEventActionScript_2",
+                                                            "eventName": "kill-chicken",
+                                                            "eventEmitter": "scene.events"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "prefabId": "051d6a33-1d33-47c1-bc3a-87f96f83d1c8",
+                                                    "id": "c66dd293-a590-4c84-b2f7-f68dfecbd9ab",
+                                                    "label": "thenActions",
+                                                    "list": [
+                                                        {
+                                                            "prefabId": "e9a23ae4-188a-44d9-b04a-5dea95d1d6b8",
+                                                            "id": "1f532297-bbf1-4a42-8d79-816dd0a685e5",
+                                                            "unlock": [
+                                                                "audioKey"
+                                                            ],
+                                                            "label": "playSoundActionScript_1",
+                                                            "audioKey": "pop_egg"
+                                                        },
+                                                        {
+                                                            "prefabId": "7458fb7d-33ca-4f50-be61-4a57e8e01b5c",
+                                                            "id": "cc6d679a-9355-4a54-b708-9f896c61dd9f",
+                                                            "unlock": [
+                                                                "velocityY"
+                                                            ],
+                                                            "label": "setVelocityYActionScript_2",
+                                                            "velocityY": -80,
+                                                            "components": [
+                                                                "ActionTargetComp"
+                                                            ],
+                                                            "ActionTargetComp.target": "ARG_1",
+                                                            "ActionTargetComp.targetName": "player"
+                                                        },
+                                                        {
+                                                            "prefabId": "a34200cf-b907-4e64-b102-6a84bbed2585",
+                                                            "id": "86d378d8-8327-43a3-98f0-41dfe3b671f2",
+                                                            "unlock": [
+                                                                "enableBody"
+                                                            ],
+                                                            "label": "setBodyEnableActionScript_2",
+                                                            "components": [
+                                                                "ActionTargetComp"
+                                                            ],
+                                                            "ActionTargetComp.target": "ARG_2",
+                                                            "ActionTargetComp.targetName": "chick"
+                                                        },
+                                                        {
+                                                            "prefabId": "7811fa03-7658-4947-8fb1-d8d8e4bc6cd3",
+                                                            "id": "86159dc9-9b3a-415f-a391-222f0f9186da",
+                                                            "unlock": [
+                                                                "animationKey",
+                                                                "ignoreIfPlaying"
+                                                            ],
+                                                            "label": "playSpriteAnimationActionScript_2",
+                                                            "animationKey": "explosion",
+                                                            "ignoreIfPlaying": true,
+                                                            "components": [
+                                                                "ActionTargetComp"
+                                                            ],
+                                                            "ActionTargetComp.target": "ARG_2",
+                                                            "ActionTargetComp.targetName": "chick",
+                                                            "list": [
+                                                                {
+                                                                    "prefabId": "466f923c-91c6-4605-a1f2-01fc6dfb9ad2",
+                                                                    "id": "1dfb5870-b556-4827-bd0f-71c848eba142",
+                                                                    "label": "destroyActionScript_1",
+                                                                    "components": [
+                                                                        "ActionTargetComp"
+                                                                    ],
+                                                                    "ActionTargetComp.target": "ARG_2",
+                                                                    "ActionTargetComp.targetName": "chick"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "prefabId": "e5d7fee6-6545-4858-b01c-a84723010d37",
+                                                            "id": "fc2ff646-ebcc-4006-bb05-b2d274d2e436",
+                                                            "unlock": [
+                                                                "objectPrefab",
+                                                                "spawnFrom"
+                                                            ],
+                                                            "label": "spawnActionScript_2",
+                                                            "objectPrefab": "Egg",
+                                                            "components": [
+                                                                "ActionTargetComp"
+                                                            ],
+                                                            "ActionTargetComp.target": "ARG_2",
+                                                            "ActionTargetComp.targetName": "chick",
+                                                            "list": [
+                                                                {
+                                                                    "prefabId": "56ec5135-b5ef-4b71-81d6-29de39f846d3",
+                                                                    "id": "e403f6a9-b6fa-4e1b-b33e-653af5193a71",
+                                                                    "unlock": [
+                                                                        "parentContainer"
+                                                                    ],
+                                                                    "label": "addToParentActionScript_1",
+                                                                    "parentContainer": "eggs",
+                                                                    "components": [
+                                                                        "ActionTargetComp"
+                                                                    ],
+                                                                    "ActionTargetComp.target": "ARG_1",
+                                                                    "ActionTargetComp.targetName": "egg"
+                                                                },
+                                                                {
+                                                                    "prefabId": "8bf04141-6251-48a6-8b0c-cca660fbcbb3",
+                                                                    "id": "e89927dd-fa2d-4af5-b0b6-97954f36c35d",
+                                                                    "unlock": [
+                                                                        "y"
+                                                                    ],
+                                                                    "label": "setYActionScript",
+                                                                    "y": 8,
+                                                                    "components": [
+                                                                        "AssignOpComp",
+                                                                        "ActionTargetComp"
+                                                                    ],
+                                                                    "AssignOpComp.operator": "+=",
+                                                                    "ActionTargetComp.target": "ARG_1"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "prefabId": "8dafe04b-63d4-4441-a042-c7883fdc3883",
+                                    "id": "014ced61-cd2f-4075-873b-26455144f99d",
+                                    "unlock": [
+                                        "collideWith",
+                                        "overlapOnly"
+                                    ],
+                                    "label": "makeObjectColliderActionScript_1",
+                                    "collideWith": "eggs",
+                                    "overlapOnly": true,
+                                    "components": [
+                                        "ActionTargetComp"
+                                    ],
+                                    "ActionTargetComp.target": "ARG_1",
+                                    "ActionTargetComp.targetName": "player",
+                                    "list": [
+                                        {
+                                            "prefabId": "7811fa03-7658-4947-8fb1-d8d8e4bc6cd3",
+                                            "id": "738068ed-ed02-4593-ba91-7b59df391814",
+                                            "unlock": [
+                                                "animationKey"
+                                            ],
+                                            "label": "playSpriteAnimationActionScript",
+                                            "animationKey": "explosion",
+                                            "components": [
+                                                "ActionTargetComp"
+                                            ],
+                                            "ActionTargetComp.target": "ARG_2",
+                                            "ActionTargetComp.targetName": "egg",
+                                            "list": [
+                                                {
+                                                    "prefabId": "466f923c-91c6-4605-a1f2-01fc6dfb9ad2",
+                                                    "id": "98679316-94d4-483a-aa1a-e4f26d85838c",
+                                                    "label": "destroyActionScript_2",
+                                                    "components": [
+                                                        "ActionTargetComp"
+                                                    ],
+                                                    "ActionTargetComp.target": "ARG_2",
+                                                    "ActionTargetComp.targetName": "egg"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "prefabId": "a34200cf-b907-4e64-b102-6a84bbed2585",
+                                            "id": "921d916d-b3fb-411f-85a9-aa79e94cee96",
+                                            "label": "setBodyEnableActionScript",
+                                            "components": [
+                                                "ActionTargetComp"
+                                            ],
+                                            "ActionTargetComp.target": "ARG_2",
+                                            "ActionTargetComp.targetName": "egg"
+                                        },
+                                        {
+                                            "prefabId": "e9a23ae4-188a-44d9-b04a-5dea95d1d6b8",
+                                            "id": "48b83505-1977-4b73-baba-d854013aea68",
+                                            "unlock": [
+                                                "audioKey"
+                                            ],
+                                            "label": "playSoundActionScript_2",
+                                            "audioKey": "egg"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "prefabId": "8dafe04b-63d4-4441-a042-c7883fdc3883",
+                                    "id": "f26b8c26-f432-4e52-ba65-1bbc91b795f8",
+                                    "unlock": [
+                                        "collideWith"
+                                    ],
+                                    "label": "makeObjectColliderActionScript_2",
+                                    "collideWith": "bombs",
+                                    "components": [
+                                        "ActionTargetComp"
+                                    ],
+                                    "ActionTargetComp.target": "ARG_1",
+                                    "ActionTargetComp.targetName": "player",
+                                    "list": [
+                                        {
+                                            "prefabId": "757fdd95-b5cc-4c5b-adef-a26b5965d851",
+                                            "id": "84b11b22-cb50-43d6-9e06-24edf93f56d0",
+                                            "unlock": [
+                                                "eventEmitter",
+                                                "eventName"
+                                            ],
+                                            "label": "emitEventActionScript_3",
+                                            "eventName": "kill-chicken",
+                                            "eventEmitter": "scene.events"
+                                        },
+                                        {
+                                            "prefabId": "7811fa03-7658-4947-8fb1-d8d8e4bc6cd3",
+                                            "id": "3cb45eaf-d746-4f95-8234-2eb75b724890",
+                                            "unlock": [
+                                                "animationKey",
+                                                "ignoreIfPlaying"
+                                            ],
+                                            "label": "playSpriteAnimationActionScript_1",
+                                            "animationKey": "bomb-explosion",
+                                            "ignoreIfPlaying": false,
+                                            "components": [
+                                                "ActionTargetComp"
+                                            ],
+                                            "ActionTargetComp.target": "ARG_2",
+                                            "ActionTargetComp.targetName": "bomb",
+                                            "list": [
+                                                {
+                                                    "prefabId": "466f923c-91c6-4605-a1f2-01fc6dfb9ad2",
+                                                    "id": "97cda570-e1cc-440c-8710-64050df3e6bc",
+                                                    "label": "destroyActionScript",
+                                                    "components": [
+                                                        "ActionTargetComp"
+                                                    ],
+                                                    "ActionTargetComp.target": "ARG_2",
+                                                    "ActionTargetComp.targetName": "bomb"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "prefabId": "a34200cf-b907-4e64-b102-6a84bbed2585",
+                                            "id": "aad164a8-3e0b-4776-b14d-67f89212623f",
+                                            "label": "setBodyEnableActionScript_1",
+                                            "components": [
+                                                "ActionTargetComp"
+                                            ],
+                                            "ActionTargetComp.target": "ARG_2",
+                                            "ActionTargetComp.targetName": "bomb"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefabId": "5691e572-0cb0-4507-8372-8b5daefd7b77",
+            "id": "857984d7-f374-4a0f-9057-2d506e539d9c",
+            "unlock": [
+                "up",
+                "left",
+                "right",
+                "down"
+            ],
+            "label": "onWorldBoundsCollideEventScript_1",
+            "up": false,
+            "down": true,
+            "left": false,
+            "right": false,
+            "list": [
+                {
+                    "prefabId": "d325f96b-76bd-490c-94dc-3251ec58c4cc",
+                    "id": "a352130f-5aaa-4739-8264-8993459c0ba6",
+                    "label": "getGameObjectFromBodyActionScript",
+                    "list": [
+                        {
+                            "prefabId": "7458fb7d-33ca-4f50-be61-4a57e8e01b5c",
+                            "id": "d8847ca7-8c7d-449a-9e0b-ef5015460213",
+                            "unlock": [
+                                "velocityY"
+                            ],
+                            "label": "setVelocityYActionScript_3",
+                            "velocityY": -80,
+                            "components": [
+                                "ActionTargetComp"
+                            ],
+                            "ActionTargetComp.target": "ARG_1"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+            "id": "b296a85e-8f6d-4e51-885a-c43df54d1c90",
+            "unlock": [
+                "eventName",
+                "eventEmitter"
+            ],
+            "label": "onEventScript_3",
+            "eventName": "kill-chicken",
+            "eventEmitter": "scene.events",
+            "list": [
+                {
+                    "prefabId": "757fdd95-b5cc-4c5b-adef-a26b5965d851",
+                    "id": "ce91ed7e-2359-4464-87eb-8a352012c6b5",
+                    "unlock": [
+                        "eventEmitter",
+                        "eventName"
+                    ],
+                    "label": "emitEventActionScript_4",
+                    "eventName": "spawn-chicken",
+                    "eventEmitter": "scene.events"
+                },
+                {
+                    "prefabId": "e5d7fee6-6545-4858-b01c-a84723010d37",
+                    "id": "a543c10e-94ec-40d4-bd51-c19c515adc5c",
+                    "unlock": [
+                        "spawnFrom",
+                        "objectPrefab"
+                    ],
+                    "label": "spawnActionScript_3",
+                    "objectPrefab": "DeadChicken",
+                    "components": [
+                        "ActionTargetComp"
+                    ],
+                    "ActionTargetComp.target": "ARG_1",
+                    "ActionTargetComp.targetName": "player"
+                },
+                {
+                    "prefabId": "466f923c-91c6-4605-a1f2-01fc6dfb9ad2",
+                    "id": "62c68caf-b96a-434d-8768-cf2f701e3eea",
+                    "label": "destroyActionScript_3",
+                    "components": [
+                        "ActionTargetComp"
+                    ],
+                    "ActionTargetComp.target": "ARG_1",
+                    "ActionTargetComp.targetName": "player"
+                }
+            ]
+        },
+        {
+            "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+            "id": "6a1a5be7-871c-4337-b9ff-909523b433ee",
+            "unlock": [
+                "eventName",
+                "eventEmitter"
+            ],
+            "label": "onEventScript",
+            "eventName": "spawn-chick",
+            "eventEmitter": "scene.events",
+            "list": [
+                {
+                    "prefabId": "56ec5135-b5ef-4b71-81d6-29de39f846d3",
+                    "id": "a87afd75-e7bd-4d51-bc4d-d7caa97707a1",
+                    "unlock": [
+                        "parentContainer"
+                    ],
+                    "label": "addToParentActionScript",
+                    "parentContainer": "chicks",
+                    "components": [
+                        "ActionTargetComp"
+                    ],
+                    "ActionTargetComp.target": "ARG_1",
+                    "ActionTargetComp.targetName": "chick"
+                }
+            ]
+        },
+        {
+            "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+            "id": "f447cd28-cdd6-4355-bba8-5fa3bc82c0e1",
+            "unlock": [
+                "eventName",
+                "eventEmitter"
+            ],
+            "label": "onEventScript_2",
+            "eventName": "spawn-bomb",
+            "eventEmitter": "scene.events",
+            "list": [
+                {
+                    "prefabId": "56ec5135-b5ef-4b71-81d6-29de39f846d3",
+                    "id": "e56a1d01-ce84-426c-8283-4ff52cd4b1e8",
+                    "unlock": [
+                        "parentContainer"
+                    ],
+                    "label": "addToParentActionScript_2",
+                    "parentContainer": "bombs",
+                    "components": [
+                        "ActionTargetComp"
+                    ],
+                    "ActionTargetComp.target": "ARG_1",
+                    "ActionTargetComp.targetName": "bomb"
+                }
+            ]
+        },
+        {
+            "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
+            "id": "2cf9e29e-3367-488b-b248-744f0d8dd617",
+            "label": "onAwakeScript",
+            "list": [
+                {
+                    "prefabId": "757fdd95-b5cc-4c5b-adef-a26b5965d851",
+                    "id": "9919ae2d-a516-4e4e-b738-08b845aeca47",
+                    "unlock": [
+                        "eventName",
+                        "eventEmitter"
+                    ],
+                    "label": "emitEventActionScript_1",
+                    "eventName": "spawn-chicken",
+                    "eventEmitter": "scene.events"
+                },
+                {
+                    "prefabId": "e9a23ae4-188a-44d9-b04a-5dea95d1d6b8",
+                    "id": "0c65571a-6941-43a7-8ac5-e4b87c7345b0",
+                    "unlock": [
+                        "audioKey"
+                    ],
+                    "label": "playSoundActionScript",
+                    "audioKey": "flappy_chicken",
+                    "components": [
+                        "AudioLoopConfigComp"
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "17881ceb-6dff-4f0c-8b52-44f6c6e1ca5b",
+            "type": "Collider",
+            "label": "collider",
+            "scope": "LOCAL",
+            "object1": "chicks.list",
+            "object2": "chicks.list"
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

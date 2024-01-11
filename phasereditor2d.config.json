@@ -1,0 +1,16 @@
+{
+    "plugins": [],
+    "scripts": [
+        "@phasereditor2d/scripts-core",
+        "@phasereditor2d/scripts-simple-animations",
+        "@phasereditor2d/scripts-arcade",
+        "@phasereditor2d/scripts-audio",
+        "@phasereditor2d/scripts-timer",
+        "@phasereditor2d/scripts-camera",
+        "@phasereditor2d/scripts-random"
+    ],
+    "skip": [
+        "dist"
+    ],
+    "playUrl": "http://localhost:8080"
+}

@@ -1,0 +1,78 @@
+{
+    "id": "82a8629d-bc4f-436e-8905-3e932b3e1555",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 360,
+        "borderHeight": 240
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "967d2478-871c-42dd-a88b-17149e208452",
+            "label": "egg",
+            "texture": {
+                "key": "atlas",
+                "frame": "egg1.png"
+            },
+            "ArcadeComponent.active": true,
+            "body.velocity.y": 50,
+            "allowGravity": false,
+            "body.bounce.x": 1,
+            "body.bounce.y": 1,
+            "collideWorldBounds": true,
+            "body.width": 18,
+            "body.height": 19,
+            "body.offset.x": 7,
+            "body.offset.y": 8,
+            "animationPlayMethod": 1,
+            "animationKey": "egg",
+            "list": [
+                {
+                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
+                    "id": "26dba674-1888-471a-bfb0-10ec4537167e",
+                    "label": "onAwakeScript",
+                    "list": [
+                        {
+                            "prefabId": "d252ccdd-bf5d-4a3b-8506-911fafafdb5b",
+                            "id": "4eca1352-bbba-4a78-a56c-42ce80fad560",
+                            "label": "execRandomActionScript",
+                            "list": [
+                                {
+                                    "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                                    "id": "01d0feba-269d-477f-ae23-007d1c1fdbfc",
+                                    "unlock": [
+                                        "velocityX"
+                                    ],
+                                    "label": "setVelocityXActionScript",
+                                    "velocityX": -100
+                                },
+                                {
+                                    "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                                    "id": "2f0248d5-7687-4a60-90cd-0c09ffa0ffa0",
+                                    "unlock": [
+                                        "velocityX"
+                                    ],
+                                    "label": "setVelocityXActionScript_1",
+                                    "velocityX": 100
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

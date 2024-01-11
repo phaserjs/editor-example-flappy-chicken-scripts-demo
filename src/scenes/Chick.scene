@@ -1,0 +1,64 @@
+{
+    "id": "47f05d31-7702-46ca-be76-590dd7ecd2a0",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 360,
+        "borderHeight": 240
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "9434082d-76c7-44c7-9b34-642881d7fba1",
+            "label": "chick",
+            "texture": {
+                "key": "atlas",
+                "frame": "chick1.png"
+            },
+            "x": 152,
+            "y": 102,
+            "ArcadeComponent.active": true,
+            "body.bounce.x": 1.05,
+            "body.bounce.y": 1.05,
+            "radius": 8,
+            "body.width": 16,
+            "body.height": 17,
+            "body.offset.x": 8,
+            "body.offset.y": 8,
+            "animationPlayMethod": 1,
+            "animationKey": "chick",
+            "list": [
+                {
+                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
+                    "id": "8cb28d56-c72e-43b7-9dba-ca9e86ed843e",
+                    "label": "onAwakeScript",
+                    "list": [
+                        {
+                            "prefabId": "be3f277f-3bff-407a-a25c-84b3f40eca01",
+                            "id": "79c613d2-5033-4963-acf7-f2a1efcad8ab",
+                            "unlock": [
+                                "flipH",
+                                "facingLeft"
+                            ],
+                            "label": "startFlipWithVelocityAction",
+                            "flipH": true,
+                            "facingLeft": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

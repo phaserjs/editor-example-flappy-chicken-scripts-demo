@@ -1,0 +1,176 @@
+{
+    "id": "419fcd0b-a885-4ef4-9cc0-e668629c425c",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 360,
+        "borderHeight": 240
+    },
+    "displayList": [
+        {
+            "type": "Sprite",
+            "id": "4d1e3eb9-dcbb-4c3d-9b11-b0f9aa7777b0",
+            "label": "chicken",
+            "texture": {
+                "key": "atlas",
+                "frame": "chicken1.png"
+            },
+            "x": 126,
+            "y": 121,
+            "ArcadeComponent.active": true,
+            "body.gravity.y": 400,
+            "collideWorldBounds": true,
+            "onWorldBounds": true,
+            "radius": 9,
+            "body.width": 17,
+            "body.height": 18,
+            "body.offset.x": 7,
+            "body.offset.y": 10,
+            "animationPlayMethod": 1,
+            "animationKey": "chicken",
+            "list": [
+                {
+                    "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+                    "id": "c53f796c-ab1f-4611-b9d9-9de9101d60db",
+                    "unlock": [
+                        "eventName",
+                        "eventEmitter"
+                    ],
+                    "label": "onKeydownRight",
+                    "eventName": "keydown-RIGHT",
+                    "eventEmitter": "scene.input.keyboard",
+                    "list": [
+                        {
+                            "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                            "id": "85b6abb1-bb05-4af9-acb4-b61e4a4d7657",
+                            "unlock": [
+                                "velocityX"
+                            ],
+                            "label": "setVelocityRight",
+                            "velocityX": 100
+                        }
+                    ]
+                },
+                {
+                    "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+                    "id": "7ff77a05-e686-42f9-9189-4f747344febc",
+                    "unlock": [
+                        "eventName",
+                        "eventEmitter"
+                    ],
+                    "label": "onKeyupRight",
+                    "eventName": "keyup-RIGHT",
+                    "eventEmitter": "scene.input.keyboard",
+                    "list": [
+                        {
+                            "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                            "id": "af3a9e53-51fc-4362-85a3-2d18cec931bf",
+                            "label": "setVelocityXActionScript"
+                        }
+                    ]
+                },
+                {
+                    "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+                    "id": "433e86e4-47db-4e99-8a6a-7917da4bc75d",
+                    "unlock": [
+                        "eventName",
+                        "eventEmitter"
+                    ],
+                    "label": "onKeyupLeft",
+                    "eventName": "keyup-LEFT",
+                    "eventEmitter": "scene.input.keyboard",
+                    "list": [
+                        {
+                            "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                            "id": "32167e70-89b7-4dab-9650-e9d82b31a3b2",
+                            "label": "setVelocityXActionScript"
+                        }
+                    ]
+                },
+                {
+                    "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+                    "id": "6f66d58d-f7c8-4e9a-bc1c-a84ff33b21ef",
+                    "unlock": [
+                        "eventName",
+                        "eventEmitter"
+                    ],
+                    "label": "onKeydownLeft",
+                    "eventName": "keydown-LEFT",
+                    "eventEmitter": "scene.input.keyboard",
+                    "list": [
+                        {
+                            "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                            "id": "d7bf6c18-e6ef-4f62-9f68-10a059a57efb",
+                            "unlock": [
+                                "velocityX"
+                            ],
+                            "label": "setVelocityLeft",
+                            "velocityX": -100
+                        }
+                    ]
+                },
+                {
+                    "prefabId": "437c7d1d-12e5-4251-8d72-3ee5abae49d2",
+                    "id": "a6029c0c-cbc4-4486-8ac6-be694d372295",
+                    "unlock": [
+                        "eventName",
+                        "eventEmitter"
+                    ],
+                    "label": "onKeydownSpace",
+                    "eventName": "keydown-SPACE",
+                    "eventEmitter": "scene.input.keyboard",
+                    "list": [
+                        {
+                            "prefabId": "7458fb7d-33ca-4f50-be61-4a57e8e01b5c",
+                            "id": "ec748763-c4cf-4ac7-b833-687bc0879a6e",
+                            "unlock": [
+                                "velocityY"
+                            ],
+                            "label": "setVelocityYActionScript",
+                            "velocityY": -150
+                        },
+                        {
+                            "prefabId": "e9a23ae4-188a-44d9-b04a-5dea95d1d6b8",
+                            "id": "40d5ae94-f8c6-41a1-8872-cf68ec30bf37",
+                            "unlock": [
+                                "audioKey"
+                            ],
+                            "label": "playSoundActionScript",
+                            "audioKey": "flap"
+                        }
+                    ]
+                },
+                {
+                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
+                    "id": "1a06768d-da55-496c-b22e-cc562ba71451",
+                    "label": "onAwakeScript",
+                    "list": [
+                        {
+                            "prefabId": "be3f277f-3bff-407a-a25c-84b3f40eca01",
+                            "id": "91ac6222-9a29-425e-99d8-ddbc9a9447e7",
+                            "unlock": [
+                                "flipH",
+                                "facingLeft"
+                            ],
+                            "label": "startFlipWithVelocityAction_1",
+                            "flipH": true,
+                            "facingLeft": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

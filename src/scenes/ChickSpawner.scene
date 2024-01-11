@@ -1,0 +1,107 @@
+{
+    "id": "6af410ae-0fed-4226-b831-df8c85a3b493",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "prefabObjDisplayFmt": "Chick spawner",
+        "displayName": "Chick Spawner",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 360,
+        "borderHeight": 240
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "7a712d91-5503-470a-acf4-aa9538e5fc3c",
+            "label": "spawner1",
+            "texture": {
+                "key": "atlas",
+                "frame": "chick1.png"
+            },
+            "x": 166,
+            "y": 115,
+            "list": [
+                {
+                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
+                    "id": "0e612f2b-566f-4172-8781-a90e74bdda1d",
+                    "private_np": true,
+                    "label": "onAwakeScript_1",
+                    "list": [
+                        {
+                            "prefabId": "0163f28b-11ff-44bf-808c-766366dae5e9",
+                            "id": "75fa587b-bcd0-4530-a1c9-9faeaba821bf",
+                            "private_np": true,
+                            "label": "emitRandomTickActionScript",
+                            "components": [
+                                "RandomInArrayComp"
+                            ],
+                            "RandomInArrayComp.options": "[1000, 2000, 8000, 12000]",
+                            "list": [
+                                {
+                                    "prefabId": "cf973a26-9cad-41b4-bb64-95f7b295c942",
+                                    "id": "15bb1c47-31a0-430f-b70c-8bb3380a8a9b",
+                                    "private_np": true,
+                                    "label": "delayRandomActionScript",
+                                    "components": [
+                                        "RandomBetweenComp"
+                                    ],
+                                    "RandomBetweenComp.max": 500,
+                                    "list": [
+                                        {
+                                            "prefabId": "e5d7fee6-6545-4858-b01c-a84723010d37",
+                                            "id": "99614448-edbd-42d8-ab0a-f90a2f6fd014",
+                                            "private_np": true,
+                                            "unlock": [
+                                                "objectPrefab",
+                                                "spawnFrom"
+                                            ],
+                                            "label": "spawnAction",
+                                            "displayName": "Spawn a chick action",
+                                            "objectPrefab": "Chick",
+                                            "spawnFrom": "ABSOLUTE_POSITION",
+                                            "list": [
+                                                {
+                                                    "prefabId": "757fdd95-b5cc-4c5b-adef-a26b5965d851",
+                                                    "id": "a5bcb994-3ab2-4232-bd2e-d4b1370250d9",
+                                                    "unlock": [
+                                                        "eventEmitter",
+                                                        "eventName"
+                                                    ],
+                                                    "label": "emitEventActionScript",
+                                                    "eventName": "spawn-chick",
+                                                    "eventEmitter": "scene.events"
+                                                },
+                                                {
+                                                    "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                                                    "id": "4c147dc3-925e-4f94-9b9d-a2ca2ac334cb",
+                                                    "label": "setVelocityXActionScript",
+                                                    "scope": "NESTED_PREFAB",
+                                                    "components": [
+                                                        "ActionTargetComp"
+                                                    ],
+                                                    "ActionTargetComp.target": "ARG_1",
+                                                    "ActionTargetComp.targetName": "chick"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

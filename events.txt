@@ -1,0 +1,6 @@
+chicken-vs-egg When the chicken collides with an egg
+chicken-vs-chick When the chicken collides with a chick
+spawn-chick When it produces a new chick.
+spawn-chicken When it spawns a new chicken.
+spawn-bomb When it spawns a new bomb.
+kill-chicken To kill the chicken and respawn it.

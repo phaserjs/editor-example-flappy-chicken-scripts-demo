@@ -1,0 +1,172 @@
+{
+    "id": "f325a9bf-50fe-4cd0-8e81-79f8ad95f63e",
+    "sceneType": "PREFAB",
+    "settings": {
+        "exportClass": true,
+        "autoImport": true,
+        "prefabObjDisplayFmt": "Bomb spawner",
+        "displayName": "Bomb Spawner",
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "compilerOutputLanguage": "TYPE_SCRIPT",
+        "borderWidth": 360,
+        "borderHeight": 240
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "f57a003d-dd5f-4709-88ff-7f4a00dd1eab",
+            "label": "bomb1_png",
+            "texture": {
+                "key": "atlas",
+                "frame": "bomb1.png"
+            },
+            "x": 145,
+            "y": 120,
+            "list": [
+                {
+                    "prefabId": "7028a0e2-cd14-44b7-b2a4-68dac16ece00",
+                    "id": "6094b312-31d4-4201-b95e-b51580da26d2",
+                    "label": "onAwakeScript",
+                    "list": [
+                        {
+                            "prefabId": "0163f28b-11ff-44bf-808c-766366dae5e9",
+                            "id": "b4aafe86-d521-467c-aee7-37108a2da58d",
+                            "label": "emitRandomTickActionScript",
+                            "components": [
+                                "RandomInArrayComp"
+                            ],
+                            "RandomInArrayComp.options": "[10000, 15000]",
+                            "list": [
+                                {
+                                    "prefabId": "e5d7fee6-6545-4858-b01c-a84723010d37",
+                                    "id": "cd62e65b-96c9-49da-a123-18140dd1d214",
+                                    "unlock": [
+                                        "objectPrefab",
+                                        "spawnInParentPosition"
+                                    ],
+                                    "label": "spawnActionScript",
+                                    "objectPrefab": "Bomb",
+                                    "spawnInParentPosition": false,
+                                    "list": [
+                                        {
+                                            "prefabId": "757fdd95-b5cc-4c5b-adef-a26b5965d851",
+                                            "id": "4dc8eba3-f287-4c5e-97a3-838c9b0aa6c7",
+                                            "unlock": [
+                                                "eventName",
+                                                "eventEmitter"
+                                            ],
+                                            "label": "emitEventActionScript",
+                                            "eventName": "spawn-bomb",
+                                            "eventEmitter": "scene.events"
+                                        },
+                                        {
+                                            "prefabId": "d252ccdd-bf5d-4a3b-8506-911fafafdb5b",
+                                            "id": "b7765d2a-f915-432d-9089-799726bef0a0",
+                                            "label": "execRandomActionScript",
+                                            "list": [
+                                                {
+                                                    "prefabId": "457af5d2-ff70-4d8d-b29e-b524bf485778",
+                                                    "id": "0f14031f-f854-4ce2-a7db-d865fec754be",
+                                                    "label": "execChildrenActionScript",
+                                                    "displayName": "From left",
+                                                    "list": [
+                                                        {
+                                                            "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                                                            "id": "6bc2a924-8975-4888-ba51-c3bb89adf194",
+                                                            "unlock": [
+                                                                "velocityX"
+                                                            ],
+                                                            "label": "setVelocityXActionScript",
+                                                            "velocityX": 80,
+                                                            "components": [
+                                                                "ActionTargetComp"
+                                                            ],
+                                                            "ActionTargetComp.target": "ARG_1",
+                                                            "ActionTargetComp.targetName": "bomb"
+                                                        },
+                                                        {
+                                                            "prefabId": "51c79515-c69c-418c-b5d3-9537c9e7ca05",
+                                                            "id": "f9853677-1d66-4f6e-a609-1656f58016b6",
+                                                            "unlock": [
+                                                                "x"
+                                                            ],
+                                                            "label": "setXActionScript_1",
+                                                            "x": -32,
+                                                            "components": [
+                                                                "ActionTargetComp"
+                                                            ],
+                                                            "ActionTargetComp.target": "ARG_1",
+                                                            "ActionTargetComp.targetName": "bomb"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "prefabId": "457af5d2-ff70-4d8d-b29e-b524bf485778",
+                                                    "id": "c081e477-dc85-437e-9bf5-a0a65f1a97b2",
+                                                    "label": "execChildrenActionScript_1",
+                                                    "displayName": "From right",
+                                                    "list": [
+                                                        {
+                                                            "prefabId": "8c192f2a-80b6-47f6-9101-7f45a5aa2825",
+                                                            "id": "a4017908-45f7-484e-9e52-ab0f709f6e1e",
+                                                            "unlock": [
+                                                                "velocityX"
+                                                            ],
+                                                            "label": "setVelocityXActionScript_1",
+                                                            "velocityX": -80,
+                                                            "components": [
+                                                                "ActionTargetComp"
+                                                            ],
+                                                            "ActionTargetComp.target": "ARG_1",
+                                                            "ActionTargetComp.targetName": "bomb"
+                                                        },
+                                                        {
+                                                            "prefabId": "51c79515-c69c-418c-b5d3-9537c9e7ca05",
+                                                            "id": "cfcf704b-4e6b-41a8-8866-9dca666e4af1",
+                                                            "unlock": [
+                                                                "x"
+                                                            ],
+                                                            "label": "setXActionScript",
+                                                            "x": 400,
+                                                            "components": [
+                                                                "ActionTargetComp"
+                                                            ],
+                                                            "ActionTargetComp.target": "ARG_1",
+                                                            "ActionTargetComp.targetName": "bomb"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "prefabId": "5a91c1a7-7a9c-4134-84ff-66d251330ad2",
+                                            "id": "90712b2c-20a4-4264-bab5-ded8130e54ec",
+                                            "label": "setRandomYActionScript",
+                                            "components": [
+                                                "ActionTargetComp",
+                                                "RandomBetweenComp"
+                                            ],
+                                            "ActionTargetComp.target": "ARG_1",
+                                            "ActionTargetComp.targetName": "bomb",
+                                            "RandomBetweenComp.min": 50,
+                                            "RandomBetweenComp.max": 170
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 5
+    }
+}

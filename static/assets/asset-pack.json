@@ -1,0 +1,91 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/animations.json",
+                "type": "animation",
+                "key": "animations"
+            },
+            {
+                "type": "multiatlas",
+                "url": "assets/atlas/atlas.json",
+                "path": "assets/atlas",
+                "key": "atlas"
+            },
+            {
+                "url": "assets/chick.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "chick"
+            },
+            {
+                "url": [
+                    "assets/audio/death.wav"
+                ],
+                "type": "audio",
+                "key": "death"
+            },
+            {
+                "url": [
+                    "assets/audio/egg.wav"
+                ],
+                "type": "audio",
+                "key": "egg"
+            },
+            {
+                "url": [
+                    "assets/audio/Explosion.wav"
+                ],
+                "type": "audio",
+                "key": "Explosion"
+            },
+            {
+                "url": [
+                    "assets/audio/flap.wav"
+                ],
+                "type": "audio",
+                "key": "flap"
+            },
+            {
+                "url": [
+                    "assets/audio/flappy_chicken.mp3"
+                ],
+                "type": "audio",
+                "key": "flappy_chicken"
+            },
+            {
+                "url": "assets/FufuSuperDino.png",
+                "type": "image",
+                "key": "FufuSuperDino"
+            },
+            {
+                "url": [
+                    "assets/audio/pick_egg.wav"
+                ],
+                "type": "audio",
+                "key": "pick_egg"
+            },
+            {
+                "url": [
+                    "assets/audio/pop_egg.wav"
+                ],
+                "type": "audio",
+                "key": "pop_egg"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}
