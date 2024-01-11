@@ -1,9 +1,10 @@
-# Webpack + TypeScript project template for Phaser Editor 2D
+# Flappy Chicken Demo
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-webpack)
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/PhaserEditor2D/flappy-chicken-scripts-demo)
 
-A project template for Phaser 3, Webpack 5, TypeScript, and Phaser Editor 2D v3.
-It also includes a workflow for deploying the game to GitHub Pages.
+A demo project to show how to use the script nodes from the script libraries.
+
+This game is a reproduction of the [Flappy Chicken game, made by Ansimuz](https://ansimuz.itch.io/flappy-chicken).
 
 ## First steps
 
