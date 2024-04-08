@@ -1,10 +1,8 @@
 # Flappy Chicken Demo
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-908a85?logo=gitpod)](https://gitpod.io/#https://github.com/PhaserEditor2D/flappy-chicken-scripts-demo)
+A demo project to show how to use the script nodes from the script libraries. It requires Phaser Editor 2D v4.0.0 or a newer version.
 
-A demo project to show how to use the script nodes from the script libraries. It requires Phaser Editor 2D v3.66.0 or a newer version.
-
-[→ Play a live version of this project](https://phasereditor2d.github.io/flappy-chicken-scripts-demo/)
+[→ Play a live version of this project](https://phaserjs.github.io/editor-flappy-chicken-scripts-demo/)
 
 This game is a reproduction of the [Flappy Chicken game, made by Ansimuz](https://ansimuz.itch.io/flappy-chicken).
 
@@ -35,20 +33,6 @@ This project requires [Node.js](https://nodejs.org) and [NPM.js](https://www.npm
 
     It is generated in the `/dist` folder.
 
-## Gitpod
-
-This repository is ready for start coding in Gitpod, a Cloud Development Environment. You only need to [click on this link](https://gitpod.io/#https://github.com/PhaserEditor2D/starter-template-webpack) for starting a new workspace.
-
-This is what Gitpod does:
-
-- Creates a workspace for this project.
-- Opens VS Code to edit this repo.
-- Installs & updates the dependencies of this repo.
-- Runs the Webpack development server in port `8080`.
-- Runs Phaser Editor 2D Core server in port `1959`.
-
-In the **Ports** panel in VS Code, it shows the links for opening the game (port `8080`) & the editor (port `1959`). It gives you the options of copy the URL, open the URL in a preview panel, or open the URL in a new tab.
-
 ## Hosting your game on GitHub Pages
 
 If you are looking for a hosting for you game, GitHub Pages is a very nice and free option.
@@ -67,33 +51,7 @@ If you don't want to deploy your game to GitHub Pages, then you can remove the `
 
 In this video I explain many of these concepts: [Start making a game in the cloud. GitHub + VS Code + Phaser Editor 2D [Tutorial]](https://www.youtube.com/watch?v=lndU7UAjzgo&t=183s)
 
-## Run the editor
-
-* You can run the editor using the `editor` NPM script, defined in the `package.json` file:
-
-    ```bash
-    $ npm run editor
-    ```
-
-* If you are in a remote environment (like the Gitpod.io IDE), then run the editor like this:
-
-    ```bash
-    $ npm run editor-remote
-    ```
-
-* If you want to see all the editor options, run:
-
-    ```bash
-    $ npx phasereditor2d-launcher -help
-    ```
-
-* If Phaser Editor 2D Core is globally installed, you can run:
-
-    ```bash
-    $ PhaserEditor2D -project .
-    ```
-
-## Phaser Editor 2D considerations
+## Phaser Editor considerations
 
 ### Excluding files from the project
 
@@ -150,4 +108,4 @@ You can add your script nodes to the `src/script-nodes` folder.
 
 ## About
 
-This project template was created by the Phaser Editor 2D team.
+This project template was created by the Phaser team.
