@@ -4,10 +4,10 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import { OnAwakeScript } from "@phasereditor2d/scripts-core";
-import { DelayActionScript } from "@phasereditor2d/scripts-timer";
-import { DestroyActionScript } from "@phasereditor2d/scripts-core";
-import { PlaySoundActionScript } from "@phasereditor2d/scripts-audio";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
+import { DelayActionScript } from "@phaserjs/editor-scripts-timer";
+import { DestroyActionScript } from "@phaserjs/editor-scripts-core";
+import { PlaySoundActionScript } from "@phaserjs/editor-scripts-audio";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 

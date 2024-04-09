@@ -4,18 +4,18 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import { OnAwakeScript } from "@phasereditor2d/scripts-core";
-import { EmitRandomTickActionScript } from "@phasereditor2d/scripts-timer";
-import { RandomInArrayComp } from "@phasereditor2d/scripts-random";
-import { SpawnActionScript } from "@phasereditor2d/scripts-core";
-import { EmitEventActionScript } from "@phasereditor2d/scripts-core";
-import { ExecRandomActionScript } from "@phasereditor2d/scripts-core";
-import { ExecChildrenActionScript } from "@phasereditor2d/scripts-core";
-import { SetVelocityXActionScript } from "@phasereditor2d/scripts-arcade";
-import { ActionTargetComp } from "@phasereditor2d/scripts-core";
-import { SetXActionScript } from "@phasereditor2d/scripts-core";
-import { SetRandomYActionScript } from "@phasereditor2d/scripts-random";
-import { RandomBetweenComp } from "@phasereditor2d/scripts-random";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
+import { EmitRandomTickActionScript } from "@phaserjs/editor-scripts-timer";
+import { RandomInArrayComp } from "@phaserjs/editor-scripts-random";
+import { SpawnActionScript } from "@phaserjs/editor-scripts-core";
+import { EmitEventActionScript } from "@phaserjs/editor-scripts-core";
+import { ExecRandomActionScript } from "@phaserjs/editor-scripts-core";
+import { ExecChildrenActionScript } from "@phaserjs/editor-scripts-core";
+import { SetVelocityXActionScript } from "@phaserjs/editor-scripts-arcade";
+import { ActionTargetComp } from "@phaserjs/editor-scripts-core";
+import { SetXActionScript } from "@phaserjs/editor-scripts-core";
+import { SetRandomYActionScript } from "@phaserjs/editor-scripts-random";
+import { RandomBetweenComp } from "@phaserjs/editor-scripts-random";
 /* START-USER-IMPORTS */
 import Bomb from "./Bomb";
 /* END-USER-IMPORTS */

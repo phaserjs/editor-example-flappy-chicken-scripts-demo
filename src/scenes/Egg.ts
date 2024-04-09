@@ -4,9 +4,9 @@
 /* START OF COMPILED CODE */
 
 import Phaser from "phaser";
-import { OnAwakeScript } from "@phasereditor2d/scripts-core";
-import { ExecRandomActionScript } from "@phasereditor2d/scripts-core";
-import { SetVelocityXActionScript } from "@phasereditor2d/scripts-arcade";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
+import { ExecRandomActionScript } from "@phaserjs/editor-scripts-core";
+import { SetVelocityXActionScript } from "@phaserjs/editor-scripts-arcade";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
