@@ -1,6 +1,6 @@
 # Flappy Chicken Demo
 
-A demo project to show how to use the script nodes from the script libraries. It requires Phaser Editor 2D v4.0.0 or a newer version.
+A demo project to show how to use the script nodes from the script libraries. It requires Phaser Editor v4.0.0 or a newer version.
 
 [→ Play a live version of this project](https://phaserjs.github.io/editor-flappy-chicken-scripts-demo/)
 

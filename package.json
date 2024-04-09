@@ -1,7 +1,7 @@
 {
-  "name": "phaser3-webpack-template",
-  "version": "1.0.0",
-  "description": "Phaser 3 project template for Phaser Editor 2D v3",
+  "name": "flappy-chicken-scripts-demo",
+  "version": "2.0.0",
+  "description": "A game made with Phaser Editor v4 script nodes",
   "main": "webpack.config.js",
   "scripts": {
     "start": "webpack serve --mode=development --stats-error-details --node-env development",
@@ -27,7 +27,6 @@
     "copy-webpack-plugin": "^8.1.1",
     "html-webpack-plugin": "^5.6.0",
     "phaser-asset-pack-hashing": "^1.0.6",
-    "phasereditor2d-launcher": "^3.67.0",
     "ts-loader": "^9.5.1",
     "typescript": "^5.4.4",
     "webpack": "^5.91.0",
