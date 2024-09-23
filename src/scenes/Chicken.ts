@@ -3,13 +3,12 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
-import { OnEventScript } from "@phaserjs/editor-scripts-core";
-import { SetVelocityXActionScript } from "@phaserjs/editor-scripts-arcade";
-import { SetVelocityYActionScript } from "@phaserjs/editor-scripts-arcade";
-import { PlaySoundActionScript } from "@phaserjs/editor-scripts-audio";
-import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
-import { StartFlipWithVelocityAction } from "@phaserjs/editor-scripts-arcade";
+import { OnEventScript } from "@phaserjs/editor-scripts-quick";
+import { SetVelocityXActionScript } from "@phaserjs/editor-scripts-quick";
+import { SetVelocityYActionScript } from "@phaserjs/editor-scripts-quick";
+import { PlaySoundActionScript } from "@phaserjs/editor-scripts-quick";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";
+import { StartFlipWithVelocityAction } from "@phaserjs/editor-scripts-quick";
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 

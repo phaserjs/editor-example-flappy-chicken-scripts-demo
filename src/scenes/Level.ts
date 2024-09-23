@@ -3,29 +3,28 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
-import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
-import { MakeObjectColliderActionScript } from "@phaserjs/editor-scripts-arcade";
-import { DestroyActionScript } from "@phaserjs/editor-scripts-core";
-import { ActionTargetComp } from "@phaserjs/editor-scripts-core";
-import { ConsoleLogActionScript } from "@phaserjs/editor-scripts-core";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";
+import { MakeObjectColliderActionScript } from "@phaserjs/editor-scripts-quick";
+import { DestroyActionScript } from "@phaserjs/editor-scripts-quick";
+import { ActionTargetComp } from "@phaserjs/editor-scripts-base";
+import { ConsoleLogActionScript } from "@phaserjs/editor-scripts-quick";
 import RightChickSpawner from "./RightChickSpawner";
 import LeftChickSpawner from "./LeftChickSpawner";
 import BombSpawner from "./BombSpawner";
-import { OnEventScript } from "@phaserjs/editor-scripts-core";
-import { SpawnActionScript } from "@phaserjs/editor-scripts-core";
-import { IfBodyTouchingScript } from "@phaserjs/editor-scripts-arcade";
-import { EmitEventActionScript } from "@phaserjs/editor-scripts-core";
-import { PlaySoundActionScript } from "@phaserjs/editor-scripts-audio";
-import { SetVelocityYActionScript } from "@phaserjs/editor-scripts-arcade";
-import { SetBodyEnableActionScript } from "@phaserjs/editor-scripts-arcade";
-import { PlaySpriteAnimationActionScript } from "@phaserjs/editor-scripts-core";
-import { AddToParentActionScript } from "@phaserjs/editor-scripts-core";
-import { SetYActionScript } from "@phaserjs/editor-scripts-core";
-import { AssignOpComp } from "@phaserjs/editor-scripts-core";
-import { OnWorldBoundsCollideEventScript } from "@phaserjs/editor-scripts-arcade";
-import { GetGameObjectFromBodyActionScript } from "@phaserjs/editor-scripts-arcade";
-import { AudioLoopConfigComp } from "@phaserjs/editor-scripts-audio";
+import { OnEventScript } from "@phaserjs/editor-scripts-quick";
+import { SpawnActionScript } from "@phaserjs/editor-scripts-quick";
+import { IfBodyTouchingScript } from "@phaserjs/editor-scripts-quick";
+import { EmitEventActionScript } from "@phaserjs/editor-scripts-quick";
+import { PlaySoundActionScript } from "@phaserjs/editor-scripts-quick";
+import { SetVelocityYActionScript } from "@phaserjs/editor-scripts-quick";
+import { SetBodyEnableActionScript } from "@phaserjs/editor-scripts-quick";
+import { PlaySpriteAnimationActionScript } from "@phaserjs/editor-scripts-quick";
+import { AddToParentActionScript } from "@phaserjs/editor-scripts-quick";
+import { SetYActionScript } from "@phaserjs/editor-scripts-quick";
+import { AssignOpComp } from "@phaserjs/editor-scripts-quick";
+import { OnWorldBoundsCollideEventScript } from "@phaserjs/editor-scripts-quick";
+import { GetGameObjectFromBodyActionScript } from "@phaserjs/editor-scripts-quick";
+import { AudioLoopConfigComp } from "@phaserjs/editor-scripts-quick";
 /* START-USER-IMPORTS */
 import Chicken from "./Chicken";
 import DeadChicken from "./DeadChicken";

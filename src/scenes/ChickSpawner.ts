@@ -3,16 +3,15 @@
 
 /* START OF COMPILED CODE */
 
-import Phaser from "phaser";
-import { OnAwakeScript } from "@phaserjs/editor-scripts-core";
-import { EmitRandomTickActionScript } from "@phaserjs/editor-scripts-timer";
-import { RandomInArrayComp } from "@phaserjs/editor-scripts-random";
-import { DelayRandomActionScript } from "@phaserjs/editor-scripts-timer";
-import { RandomBetweenComp } from "@phaserjs/editor-scripts-random";
-import { SpawnActionScript } from "@phaserjs/editor-scripts-core";
-import { EmitEventActionScript } from "@phaserjs/editor-scripts-core";
-import { SetVelocityXActionScript } from "@phaserjs/editor-scripts-arcade";
-import { ActionTargetComp } from "@phaserjs/editor-scripts-core";
+import { OnAwakeScript } from "@phaserjs/editor-scripts-quick";
+import { EmitRandomTickActionScript } from "@phaserjs/editor-scripts-quick";
+import { RandomInArrayComp } from "@phaserjs/editor-scripts-quick";
+import { DelayRandomActionScript } from "@phaserjs/editor-scripts-quick";
+import { RandomBetweenComp } from "@phaserjs/editor-scripts-quick";
+import { SpawnActionScript } from "@phaserjs/editor-scripts-quick";
+import { EmitEventActionScript } from "@phaserjs/editor-scripts-quick";
+import { SetVelocityXActionScript } from "@phaserjs/editor-scripts-quick";
+import { ActionTargetComp } from "@phaserjs/editor-scripts-base";
 /* START-USER-IMPORTS */
 import Chick from "./Chick";
 /* END-USER-IMPORTS */
