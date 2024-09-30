@@ -1,4 +1,4 @@
-## v2.1.0 - Sep 23, 2024
+## v2.0.1 - Sep 23, 2024
 
 * Updates to the new script libraries `@phaserjs/editor-scripts-base` and `@phaserjs/editor-scripts-quick`.
 
