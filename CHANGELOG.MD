@@ -1,3 +1,7 @@
+## v2.0.1 - Mar 31, 2025
+
+Updates to Phaser 3.88.2.
+
 ## v2.0.1 - Sep 23, 2024
 
 * Updates to the new script libraries `@phaserjs/editor-scripts-base` and `@phaserjs/editor-scripts-quick`.
